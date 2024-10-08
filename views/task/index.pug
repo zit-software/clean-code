@@ -1,0 +1,26 @@
+extends ../layout.pug
+
+block content
+  .sticky-top.bg-white
+    h1 Todo List
+    form.d-flex.gap-2(action='', method='post')
+      input.form-control(type='text', name='title', placeholder='Add a task', required, autofocus)
+      input.btn.btn-primary(type='submit', value='Add a task')
+  ul.list-group
+    each task, i in tasks
+      li.list-group-item.d-flex.align-items-center.gap-2
+        span.flex-grow-1(
+          style=task.isCompleted ? 'text-decoration: line-through; opacity: .8' : '1'
+        )
+          = task.title
+        form.m-0(action='/task/' + task.id + '?_method=PATCH', method='post')
+          input.form-check-input.m-0(
+            type='checkbox',
+            name='isCompleted',
+            checked=task.isCompleted,
+            onchange='this.form.submit()'
+          )
+        form.m-0(action='/task/' + task.id + '?_method=DELETE', method='post')
+          button.btn.btn-text.btn-sm.text-danger(type='submit') Delete
+    else
+      p.text-center.text-secondary No tasks yet
