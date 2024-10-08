@@ -1,0 +1,14 @@
+html
+  head
+    title Todo app
+    meta(charset='utf-8')
+    link(rel='icon', href='https://avatars.githubusercontent.com/t/11220173')
+    style
+      include ../node_modules/bootswatch/dist/lumen/bootstrap.min.css
+  body
+    include header.pug
+
+    main.container(style='max-width: 500px; margin-top: 50px; min-height: calc(100vh - 300px)')
+      block content
+
+    include footer.pug
