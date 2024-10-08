@@ -1,0 +1,7 @@
+extends layout.pug
+
+block content
+  .d-flex.flex-column.align-items-center.justify-content-center.h-50
+    h5.text-center Something went wrong
+    p.text-center #{error.message}
+    a.btn.btn-dark(href='/') Go back to home

@@ -1,0 +1,42 @@
+{
+  "name": "clean-code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [],
+  "author": {
+    "name": "ZIT Software",
+    "email": "root@zitsoftware.com",
+    "url": "https://cc.zitsoftware.com"
+  },
+  "homepage": "https://cc.zitsoftware.com",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "bootswatch": "^5.3.3",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.21.0",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.3",
+    "sequelize": "^6.37.4",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "@prettier/plugin-pug": "^3.1.0",
+    "@types/cookie-parser": "^1.4.7",
+    "@types/express": "^5.0.0",
+    "@types/method-override": "^0.0.35",
+    "@types/morgan": "^1.9.9",
+    "eslint": "^9.12.0",
+    "globals": "^15.11.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "prettier-plugin-organize-imports": "^4.1.0"
+  },
+  "scripts": {
+    "dev": "nodemon .",
+    "start": "node ."
+  }
+}
