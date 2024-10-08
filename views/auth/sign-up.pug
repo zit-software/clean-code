@@ -1,0 +1,42 @@
+extends ../layout.pug
+
+block content
+  h1 Sign Up
+  form(action='', method='post')
+    .mb-3
+      label.form-label(for='username') Username
+      input#username.form-control(
+        type='username',
+        name='username',
+        placeholder='Enter your username',
+        required,
+        autofocus,
+        autocomplete='username',
+        value=defaultValues.username
+      )
+    .mb-3
+      label.form-label(for='password') Password
+      input#password.form-control(
+        type='password',
+        name='password',
+        placeholder='Enter your password',
+        required,
+        autocomplete='new-password',
+        value=defaultValues.password
+      )
+    .mb-3
+      label.form-label(for='confirmPassword') Confirm Password
+      input#confirmPassword.form-control(
+        type='password',
+        name='confirmPassword',
+        placeholder='Confirm your password',
+        required,
+        autocomplete='new-password',
+        value=defaultValues.confirmPassword
+      )
+    .d-flex.align-items-center.justify-content-between
+      button.btn.btn-primary(type='submit') Sign Up
+      a(href='/auth/sign-in') Sign In
+
+    if error
+      p.alert.alert-danger.my-4 #{error.message}
