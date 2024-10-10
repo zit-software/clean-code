@@ -83,8 +83,10 @@ Việc clean code phải đảm bảo các yêu cầu sau:
 Chỉ thực hiện chỉnh sửa trong file `services/auth.service.js` và đảm bảo không làm thay đổi bất cứ
 interface nào.
 
-> [!WARNING] Để cho đơn giản trong phạm vi thời gian một chuyên đề ứng dụng này đã bỏ qua một số
-> nguyên tắc về bảo mật trong các chức năng như đăng ký, đăng nhập, xác thực người dùng.
+> [!WARNING]
+>
+> Để cho đơn giản trong phạm vi thời gian một chuyên đề ứng dụng này đã bỏ qua một số nguyên tắc về
+> bảo mật trong các chức năng như đăng ký, đăng nhập, xác thực người dùng.
 >
 > Vui lòng không sử dụng hoặc tham khảo các đoạn mã đã được ghi chú là không an toàn trong môi
 > trường thực tế.
