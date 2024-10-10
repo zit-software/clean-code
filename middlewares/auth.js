@@ -15,7 +15,7 @@ export async function requireLogin(req, res, next) {
 
     res.locals.user = user;
     next();
-  } catch (error) {
+  } catch {
     res.status(401).redirect('/auth/sign-in');
   }
 }

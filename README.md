@@ -36,10 +36,10 @@ erDiagram
 
 ### Môi trường
 
-Ứng dụng được viết bằng JavaScript và chạy trên nền Node.js vì thế bạn cần cài đặt Node.js trước khi
-chạy ứng dụng(Khuyến nghị sử dụng Node.js 20.x.x)
-
-<https://nodejs.org/en/download/package-manager>
+- Ứng dụng được viết bằng JavaScript và chạy trên nền Node.js vì thế bạn cần cài đặt Node.js trước
+  khi chạy ứng dụng(Khuyến nghị sử dụng Node.js 20.x.x)
+  <https://nodejs.org/en/download/package-manager>
+- Trình soạn thảo code: <https://code.visualstudio.com/download>
 
 ### Cài đặt
 

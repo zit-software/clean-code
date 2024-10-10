@@ -18,9 +18,7 @@ class AuthController {
       const createdUser = await authService.signUp(req.body);
 
       // THIS IS JUST FOR DEMO PURPOSES, IN REAL APPS YOU SHOULD SIGN THE COOKIE WITH A SECRET KEY
-      res.cookie('user', createdUser.id, {httpOnly: true});
-
-      res.redirect('/');
+      res.cookie('user', createdUser.id, {httpOnly: true}).redirect('/');
     } catch (error) {
       res.status(401).render('auth/sign-up', {error, defaultValues: req.body});
     }
@@ -47,9 +45,7 @@ class AuthController {
       const user = await authService.signIn(req.body);
 
       // THIS IS JUST FOR DEMO PURPOSES, IN REAL APPS YOU SHOULD SIGN THE COOKIE WITH A SECRET KEY
-      res.cookie('user', user.id, {httpOnly: true});
-
-      res.redirect('/');
+      res.cookie('user', user.id, {httpOnly: true}).redirect('/');
     } catch (error) {
       res.status(401).render('auth/sign-in', {error, defaultValues: req.body});
     }
