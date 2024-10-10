@@ -3,6 +3,6 @@
  * @type {import('express').ErrorRequestHandler}
  */
 export default function errorHandler(error, req, res, next) {
-  res.render('error', {error});
+  res.status(500).render('error', {error});
   next();
 }
