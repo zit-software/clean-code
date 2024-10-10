@@ -1,7 +1,6 @@
 {
   "arrowParens": "avoid",
   "bracketSpacing": false,
-  "jsxBracketSameLine": false,
   "jsxSingleQuote": false,
   "printWidth": 100,
   "proseWrap": "always",
@@ -11,8 +10,5 @@
   "tabWidth": 2,
   "trailingComma": "es5",
   "useTabs": false,
-  "plugins": [
-    "@prettier/plugin-pug",
-    "prettier-plugin-organize-imports"
-  ]
+  "plugins": ["@prettier/plugin-pug", "prettier-plugin-organize-imports"]
 }
