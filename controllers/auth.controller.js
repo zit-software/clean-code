@@ -40,7 +40,7 @@ class AuthController {
    * Handle the sign-in form submission
    * @type {import('express').RequestHandler}
    */
-  async postSignIn(req, res, next) {
+  async postSignIn(req, res) {
     try {
       const user = await authService.signIn(req.body);
 
